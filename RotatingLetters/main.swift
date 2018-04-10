@@ -33,10 +33,27 @@ while 1 == 1 {
         continue // prompt again
     }
     
+    // Test #3: Check to ensure there is only UPPERCASE letters and no spaces
+    for individualCharacter in givenInput {
+        
+        //Print the character we are looking at
+        print(individualCharacter)
+        
+        // Check the character
+        switch individualCharacter {
+        case "A", "B", "C", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z":
+            continue   // OK, go to next charater in the string
+        default:
+            continue  // stop looking, we"ve found bad input
+        }
+    }
     // If we got to this point, weknow the input is good
     break  // quit the while loop and begin PROCESS section
     
 }
+
+// PROCESS
+print(validInput)
 
 
 
